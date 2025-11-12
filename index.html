@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Montecito Racing — GT Endurance Sim Team</title>
+  <meta name="description" content="Montecito Racing — GT endurance sim team built in the USA. Teamwork, camaraderie, respect. Building a tradition of results from sim to real." />
+  <style>
+    :root{
+      --navy:#0a1224;       /* dark navy */
+      --navy-2:#0e1a33;     /* deeper card */
+      --red:#d61e2e;        /* team red */
+      --text:#f2f6ff;       /* light text */
+      --muted:#a9b5d1;
+      --border:#1d2a4a;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Inter,Roboto,Arial;
+      background:linear-gradient(180deg,var(--navy),#0b152e 60%,#0a142b);
+      color:var(--text);
+      line-height:1.6;
+    }
+    a{color:var(--text); text-decoration:none}
+    .container{max-width:1000px; margin:0 auto; padding:20px}
+    /* top bar */
+    .top{display:flex; justify-content:flex-end; gap:10px; padding:10px 0}
+    .btn{background:var(--red); color:#fff; padding:10px 16px; border-radius:10px; border:0; font-weight:700; cursor:pointer}
+    .btn.alt{background:transparent; border:1px solid var(--border); color:var(--text)}
+    /* logo section */
+    .logo-wrap{
+      display:flex; align-items:center; justify-content:center;
+      padding:28px; border:1px solid var(--border); border-radius:16px; background:linear-gradient(180deg,var(--navy-2),#0b162f);
+      min-height:180px;
+    }
+    .logo-wrap img{max-height:clamp(120px, 18vw, 220px); width:auto; object-fit:contain}
+    /* banner */
+    .banner{
+      margin:18px 0;
+      border-radius:16px; overflow:hidden; border:1px solid var(--border);
+      background:#0f1b36;
+    }
+    .banner img{display:block; width:100%; height:300px; object-fit:cover}
+    /* sections */
+    h1{font-size:clamp(24px,4vw,40px); margin:8px 0 6px}
+    h2{font-size:clamp(18px,3vw,26px); margin:0 0 8px; border-left:6px solid var(--red); padding-left:10px}
+    p.lead{color:#d7def1; margin:0 0 14px}
+    .card{background:linear-gradient(180deg,var(--navy-2),#0b162f); border:1px solid var(--border); border-radius:16px; padding:18px; margin:16px 0}
+    .grid{display:grid; grid-template-columns:1fr 1fr; gap:16px}
+    @media (max-width:900px){ .grid{grid-template-columns:1fr} }
+    ul.list{list-style:none; padding:0; margin:0}
+    ul.list li{padding:10px 0; border-bottom:1px dashed var(--border)}
+    footer{margin:28px 0; text-align:center; color:var(--muted); font-size:14px}
+    /* mobile polish */
+    @media (max-width:600px){
+      .banner img{height:180px}
+      .logo-wrap img{max-height:180px; max-width:90vw}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="top">
+      <a class="btn alt" href="https://discord.gg/4ecn8DXf" target="_blank" rel="noopener">Discord</a>
+      <a class="btn alt" href="https://www.tiktok.com/@montecito.racing" target="_blank" rel="noopener">TikTok</a>
+      <a class="btn" href="#contact">Contact</a>
+    </div>
+
+    <!-- LOGO -->
+    <section class="logo-wrap" aria-label="Team Logo">
+      <!-- Replace with your actual logo file name or hosted URL -->
+      <img src="logo1.png" alt="Montecito Racing Logo" onerror="this.style.display='none'">
+    </section>
+
+    <!-- BANNER -->
+    <section class="banner" aria-label="Hero Banner">
+      <!-- Replace with your actual banner image file -->
+      <img src="IMG_6212.jpeg" alt="Team Banner" onerror="this.style.display='none'">
+    </section>
+
+    <!-- ABOUT -->
+    <section class="card">
+      <h1>About</h1>
+      <p class="lead">Montecito Racing was founded in the USA, built to expand racing opportunities for all skill levels. From our drivers to our staff, we strive to instill teamwork, comradery, and respect everyday. We keep the standards simple: clear goals, shared data, and honest reviews after every session. We prepare, execute, and own the result. Clean stints, smart traffic management, and repeatable pace come first. Over time, that work builds a record. Our goal is a tradition of racing dominance earned by lap times and finishes.</p>
+      <a class="btn" href="#schedule">View Schedule</a>
+    </section>
+
+    <!-- SPONSORS / SCHEDULE -->
+    <section class="grid">
+      <div class="card" id="partners">
+        <h2>Sponsors</h2>
+        <p>We’re open to partners. Deliverables include logo placement, monthly short‑form clips, and race recap integrations with measurable reporting. Email us for rates.</p>
+      </div>
+      <div class="card" id="schedule">
+        <h2>Next Races</h2>
+        <ul class="list">
+          <li><strong>[Event 1]</strong> — [Date] — [Car/Class]</li>
+          <li><strong>[Event 2]</strong> — [Date] — [Car/Class]</li>
+          <li><strong>[Event 3]</strong> — [Date] — [Car/Class]</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ROSTER / ROLES -->
+    <section class="grid">
+      <div class="card">
+        <h2>Roster</h2>
+        <ul class="list">
+          <li><strong>Driver:</strong> Andrew McDonald (@yourhandle)</li>
+          <li><strong>Driver:</strong> Jack Berry (@teammatehandle)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Open Roles</h2>
+        <p>Trials for driver, engineer, and strategy roles are announced on Discord. Apply there.</p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="card" id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:montecitoracing@gmail.com">montecitoracing@gmail.com</a></p>
+    </section>
+
+    <footer>© <span id="year"></span> Montecito Racing. All rights reserved.</footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+</body>
+</html>
